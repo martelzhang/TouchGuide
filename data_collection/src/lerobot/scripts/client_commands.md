@@ -12,12 +12,10 @@ lerobot-teleoperate \
 
 ## TacUMI Robot teleoperate by Mock Teleop command
 
-### 1e892b82baa5 -another mac addr
-
 ```python
 lerobot-teleoperate \
     --robot.type=xense_flare \
-    --robot.mac_addr="6ebbc5f53240" \
+    --robot.mac_addr=<your_mac_address> \
     --teleop.type=mock_teleop \
     --fps=30 \
     --display_data=true \
@@ -30,7 +28,7 @@ lerobot-teleoperate \
 ```python
 lerobot-record \
     --robot.type=xense_flare \
-    --robot.mac_addr=6ebbc5f53240 \
+    --robot.mac_addr=<your_mac_address> \
     --dataset.repo_id=<your_repo_id> \
     --dataset.num_episodes=20 \
     --dataset.single_task="your prompt" \

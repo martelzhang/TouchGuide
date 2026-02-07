@@ -89,7 +89,7 @@ create_environment() {
 if [[ -n "$2" ]]; then
     ENV_NAME="$2"
 else
-    ENV_NAME="touch_guide_test"
+    ENV_NAME="touch_guide"
 fi
 
 # Check if the --conda parameter is passed
