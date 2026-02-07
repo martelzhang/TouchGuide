@@ -1,0 +1,37 @@
+name: touch_guide
+channels:
+  - robostack-staging
+  - conda-forge
+  - nvidia
+dependencies:
+  - python=3.10
+  - ros-humble-kdl-parser
+  - ros-humble-ament-cmake
+  - cxx-compiler
+  - libstdcxx-ng
+  - cmake
+  - ninja
+  - orocos-kdl
+  - eigen
+  - boost
+  - spdlog
+  - pybind11
+  - numpy=1.26.4
+  - wheel
+  - click
+  - pyzmq
+  - pynput
+  - pip
+  - evdev
+  # wxpython binary to avoid source build for pysurvive/gooey
+  - conda-forge::wxpython>=4.1,<4.3
+  # Pin to Linux-available CUDA/CuDNN
+  - nvidia::cuda-toolkit=12.2.2 # for xensesdk
+  - conda-forge::ffmpeg=7.1.1 # for libsvtav1 encoder
+  - conda-forge::soem=1.4.0 # This package is missing in aarch64
+  # To install it on aarch64 (arm64), comment out this package and first create the arx-py311 environment.
+  # Directly clone the SOEM repository and install it to the conda environment (ensure $CONDA_PREFIX points to tacxense):
+  # `conda activate tacxense`
+  # `git clone https://github.com/OpenEtherCATsociety/SOEM.git && cd SOEM`
+  # `mkdir build && cd build && cmake -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX .. && make -j && make install`
+  # ARX5 SDK Conda Env
