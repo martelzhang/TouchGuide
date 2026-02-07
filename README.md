@@ -4,12 +4,14 @@
 
 Project Page: [martelzhang.github.io/touchguide](https://martelzhang.github.io/touchguide)
 
+Paper: [arxiv.org/pdf/2601.20239](https://arxiv.org/pdf/2601.20239)
+
 Zhemeng Zhang, Jiahua Ma, Xincheng Yang, Xin Wen, Yuzhi Zhang, Boyan Li, Yiran Qin, Jin Liu, Can Zhao, Li Kang, Haoqin Hong, Zhenfei Yin, Philip Torr, Hao Su, Ruimao Zhang, Daolin Ma.
 
 Shanghai Jiao Tong University, Xense Robotics, Sun Yat-sen University, University of Oxford, Shanghai AI Laboratory, Shanghai AI Laboratory, University of California San Diego.
 
 # TODO List
-- [ ] **TacUMI** harware.
+- [x] **TacUMI** harware.
 - [x] Data collection code.
 - [ ] **TouchGuide** code.
 
@@ -42,13 +44,17 @@ Then install **XenseSDK**, **ARX5 SDK**, and all other required packages.
 We use the **LeRobot** format for data collection. Likewise, we provide a unified and efficient wrapper. For **ARX5**, use the following command for data collection:
 
 ```bash
-lerobot-teleoperate \
+lerobot-record \
     --robot.type=bi_arx5 \
-    --robot.enable_tactile_sensors=true \
     --teleop.type=mock_teleop \
-    --fps=30 \
-    --debug_timing=false \
-    --display_data=true
+    --dataset.repo_id=<your_repo_id> \
+    --dataset.num_episodes=100 \
+    --dataset.single_task="your prompt" \
+    --dataset.fps=30 \
+    --dataset.episode_time_s=300 \
+    --display_data=false \
+    --resume=true \
+    --dataset.push_to_hub=true
 ```
 
 For **TacUMI**, you can use the following command for data collection:
@@ -65,6 +71,8 @@ lerobot-record \
     --resume=false \
     --dataset.push_to_hub=true
 ```
+
+For more commands, please refer to: [client_commands.md](data_collection/src/lerobot/scripts/client_commands.md)
 
 # Citation
 If you find this work helpful, we would greatly appreciate it if you cite our paper.
