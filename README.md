@@ -8,11 +8,13 @@ Paper: [arxiv.org/pdf/2601.20239](https://arxiv.org/pdf/2601.20239)
 
 Zhemeng Zhang, Jiahua Ma, Xincheng Yang, Xin Wen, Yuzhi Zhang, Boyan Li, Yiran Qin, Jin Liu, Can Zhao, Li Kang, Haoqin Hong, Zhenfei Yin, Philip Torr, Hao Su, Ruimao Zhang, Daolin Ma.
 
-Shanghai Jiao Tong University, Xense Robotics, Sun Yat-sen University, University of Oxford, Shanghai AI Laboratory, Shanghai AI Laboratory, University of California San Diego.
+Shanghai Jiao Tong University, Xense Robotics, Sun Yat-sen University, University of Oxford, Shanghai AI Laboratory, University of Science and Technology of China, University of California San Diego.
 
 # TODO List
 - [x] **TacUMI** harware.
 - [x] Data collection code.
+- [ ] Hardware guide.
+- [ ] Data collection guide.
 - [ ] **TouchGuide** code.
 
 # Environment Setup
@@ -38,6 +40,9 @@ Then install **XenseSDK**, **ARX5 SDK**, and all other required packages.
 ```bash
 ./setup_env.sh --install
 ```
+
+# TacUMI Hardware
+The 3D model of TacUMI is shown in: [TacUMI 3D Model](tacumi_hardware/model/tacumi_3d_model.STL). The interactive 3D model preview is available at [Project Page](https://martelzhang.github.io/touchguide).
 
 # Data Collection
 
