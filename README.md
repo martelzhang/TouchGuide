@@ -42,7 +42,7 @@ Then install **XenseSDK**, **ARX5 SDK**, and all other required packages.
 ```
 
 # TacUMI Hardware
-The 3D model of TacUMI is shown in: [TacUMI 3D Model](thttps://drive.google.com/drive/folders/1vm9Gr-SmsYW3Mj53L00d_iwcakxhVEXc?usp=share_link). The interactive 3D model preview is available at [Project Page](https://martelzhang.github.io/touchguide).
+The 3D model of TacUMI is shown in: [TacUMI 3D Model](https://drive.google.com/drive/folders/1vm9Gr-SmsYW3Mj53L00d_iwcakxhVEXc?usp=share_link). The interactive 3D model preview is available at [Project Page](https://martelzhang.github.io/touchguide).
 
 # Data Collection
 
