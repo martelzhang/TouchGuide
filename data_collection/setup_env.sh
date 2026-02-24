@@ -170,12 +170,12 @@ elif [[ "$1" == "--install" ]]; then
                     echo "[INFO] wxpython installed successfully after cuda-toolkit bump."
                 else
                     echo "[ERROR] wxpython installation via conda failed after retry (needed for Vive tracker)."
-                    echo "        请检查网络或手动执行: CONDA_REPODATA_FNS=repodata.json,repodata_from_packages.json \\"
-                    echo "          CONDA_CHANNEL_PRIORITY=flexible conda install -n $ENV_NAME -c conda-forge wxpython --freeze-installed"
+                    echo "Please check your network or run manually: CONDA_REPODATA_FNS=repodata.json,repodata_from_packages.json \\"
+                    echo "CONDA_CHANNEL_PRIORITY=flexible conda install -n $ENV_NAME -c conda-forge wxpython --freeze-installed"
                     exit 1
                 fi
             else
-                echo "[ERROR] 无法安装兼容的 cuda-toolkit (>=12.6.3,<12.7) 来继续安装 wxpython。"
+                echo "[ERROR] Unable to install a compatible cuda-toolkit (>=12.6.3,<12.7) to continue installing wxpython."
                 exit 1
             fi
         fi
