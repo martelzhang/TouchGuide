@@ -83,13 +83,10 @@ For more commands, please refer to: [client_commands.md](data_collection/src/ler
 # Citation
 If you find this work helpful, we would greatly appreciate it if you cite our paper.
 ```
-@misc{zhang2026touchguide,
-title={TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance},
-author={Zhemeng Zhang and Jiahua Ma and Xincheng Yang and Xin Wen and Yuzhi Zhang and Boyan Li and Yiran Qin and Jin Liu and Can Zhao and Li Kang and Haoqin Hong and Zhenfei Yin and Philip Torr and Hao Su and Ruimao Zhang and Daolin Ma},
-year={2026},
-eprint={2601.20239},
-archivePrefix={arXiv},
-primaryClass={cs.RO},
-url={https://arxiv.org/abs/2601.20239},
+@article{zhang2026touchguide,
+  title={TouchGuide: Inference-Time Steering of Visuomotor Policies via Touch Guidance},
+  author={Zhang, Zhemeng and Ma, Jiahua and Yang, Xincheng and Wen, Xin and Zhang, Yuzhi and Li, Boyan and Qin, Yiran and Liu, Jin and Zhao, Can and Kang, Li and others},
+  journal={arXiv preprint arXiv:2601.20239},
+  year={2026}
 }
 ```
